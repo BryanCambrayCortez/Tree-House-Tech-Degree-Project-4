@@ -1,0 +1,40 @@
+
+
+.grid__col--12 {
+  @include flexbox_container_column;
+  @media (min-width: 769px) {
+    @include flexbox_container_row_LG;
+  }
+}
+
+
+.btn--default {
+  background-color: $color-button-default;
+  @include roundy($color-white);
+    text-transform: uppercase;
+  }
+.btn--success{
+  background-color:$color-button-success;
+  @include roundy($color-white);
+    text-transform: uppercase;
+  }
+.btn--error{
+  background-color:$color-button-error;
+  @include roundy($color-white);
+    text-transform: uppercase;
+  }
+.btn--warning{
+  background-color:$color-button-warning;
+  @include roundy($color-white);
+    text-transform: uppercase;
+  }
+.btn--info{
+  background-color:$color-button-info;
+  @include roundy($color-white);
+    text-transform: uppercase;
+}
+
+button:hover {
+  font-weight: 900;
+  letter-spacing: 1px;
+}

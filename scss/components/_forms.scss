@@ -1,0 +1,11 @@
+
+.form__input{
+  background-color: $color-headline;
+  height: 5px;
+  margin-bottom: 15px;
+}
+
+.form{
+  @include flexbox_container_column;
+  background-color: $color-white;
+}

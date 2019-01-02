@@ -1,0 +1,43 @@
+
+.card{
+  .headline--primary {
+    color: $color-headline;
+    p{
+      text-align: left;
+    }
+  }
+}
+
+.blockquote{
+  border-left: 10px solid $color-headline;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  line-height: 2.0em;
+  text-align: left;
+  font-size: 1.4em;
+  color: $color-grey-font;
+  font-style: italic;
+  @media (min-width: 1400px) {
+    line-height: 1.5em;
+    width: 40%;
+  }
+}
+
+.headline--secondary{
+  text-align: left;
+  margin-top: 50px;
+  color: $color-grey-font;
+}
+
+.headline--primary {
+  @include left;
+}
+
+h4 {
+  color: $color-grey-font;
+}
+
+.link {
+  color: $color-headline;
+  text-decoration: none;
+}

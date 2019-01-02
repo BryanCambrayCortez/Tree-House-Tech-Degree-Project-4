@@ -1,0 +1,62 @@
+
+@mixin flexbox_container_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@mixin flexbox_container_column_LG {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+@mixin flexbox_container_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@mixin flexbox_container_row_LG{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+//buttons and grid height and radius
+
+@mixin roundy ($c) {
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  color: $c;
+}
+
+//last child margin bottom
+
+@mixin last-child{
+  &:last-child{
+    margin-bottom: 25px;
+  }
+}
+
+//p left align
+
+@mixin left{
+  text-align: left;
+}
+
+//media queries
+
+@mixin grid_layout ($g,$r) {
+  @media (min-width:769px) {
+    flex-grow: $g;
+    margin-right: $r;
+    text-align: center;
+  }
+}

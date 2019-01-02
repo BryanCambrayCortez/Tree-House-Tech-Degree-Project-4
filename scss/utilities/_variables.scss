@@ -1,0 +1,39 @@
+//Colors
+
+//headlines, blockquotes and text colors
+$color-headline: #33ffad;
+
+//white
+
+$color-white: #ffffff;
+
+//black
+
+$color-black: #000;
+
+//fonts
+
+$color-grey-font: #8c8c8c;
+$color-grey-font-dark: darken($color-grey-font,40%);
+
+
+//button colors
+$color-button-default: #1ab2ff;
+$color-button-success: #40bf40;
+$color-button-error: #ff4d4d;
+$color-button-warning: #ff6600;
+$color-button-info: #993399;
+
+//grid colors
+$color-col-12: #33ff99;
+$color-col-6:#0066cc;
+$color-col-4: #b3d9ff;
+$color-col-3: #ff99ff;
+$color-col-5: #00cc44;
+$color-col-7: #ff6666;
+$color-col-8: #ff471a;
+$color-col-center: #ff5050;
+
+//fonts
+
+$primary-font: "Open Sans", sans-serif;

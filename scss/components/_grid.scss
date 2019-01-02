@@ -1,0 +1,84 @@
+
+.container{
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: 769px) {
+    @include flexbox_container_column_LG;
+  }
+  @media (min-width: 1400px) {
+    @include flexbox_container_column_LG;
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+}
+
+.grid__row{
+  margin-top: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
+  @include flexbox_container_column;
+  [class="grid__col--12 theme__colors"]{
+    background-color: $color-col-12;
+    @include roundy($color-grey-font-dark);
+    @include last-child;
+    @include left;
+    @include grid_layout (1,25px);
+  }
+  [class="grid__col--6 theme__colors"]{
+    background-color: $color-col-6;
+    @include roundy($color-grey-font-dark);
+    @include last-child;
+    @include left;
+    @include grid_layout (2,25px);
+  }
+  [class="grid__col--4 theme__colors"]{
+    background-color: $color-col-4;
+    @include roundy($color-grey-font-dark);
+    @include last-child;
+    @include left;
+    @include grid_layout (3,25px);
+  }
+  [class="grid__col--3 theme__colors"]{
+    background-color: $color-col-3;
+    @include roundy($color-grey-font-dark);
+    @include last-child;
+    @include left;
+    @include grid_layout (4,25px);
+
+  }
+  [class="grid__col--5 theme__colors"]{
+    background-color: $color-col-5;
+    @include roundy($color-grey-font-dark);
+    @include left;
+    @include grid_layout (1.8,25px);
+  }
+  [class="grid__col--7 theme__colors"]{
+    background-color: $color-col-7;
+    @include roundy($color-grey-font-dark);
+    @include last-child;
+    @include left;
+    @include grid_layout (3,25px);
+  }
+  [class="grid__col--8 theme__colors"]{
+    background-color: $color-col-8;
+    @include roundy($color-grey-font-dark);
+    @include left;
+    @include grid_layout (4,25px);
+  }
+  [class="grid__col--4 theme__colors"]{
+    background-color: $color-col-4;
+    @include roundy($color-grey-font-dark);
+    @include last-child;
+    @include left;
+    @include grid_layout (1.3,25px);
+  }
+  [class="grid__col--7 theme__colors centered"]{
+    background-color: $color-col-7;
+    @include roundy($color-grey-font-dark);
+    @include left;
+    @include grid_layout (.70,0);
+  }
+  @media (min-width:769px) {
+    @include flexbox_container_row;
+  }
+}

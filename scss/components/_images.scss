@@ -1,0 +1,19 @@
+.img--avatar{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  @media (min-width: 1400px) {
+    width: 100%;
+  }
+}
+.img--frame{
+  border:solid 1px $color-grey-font;
+  padding: 10px;
+  background-color: $color-white;
+  margin-bottom: 25px;
+  width: 80%;
+  @media (min-width: 1400px) {
+    width: 100%;
+  }
+}
