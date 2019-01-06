@@ -1,8 +1,12 @@
 
 
 .grid__col--12 {
+  button:hover {
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
   @include flexbox_container_column;
-  @media (min-width: 769px) {
+  @media (min-width: $med) {
     @include flexbox_container_row_LG;
   }
 }
@@ -32,9 +36,4 @@
   background-color:$color-button-info;
   @include roundy($color-white);
     text-transform: uppercase;
-}
-
-button:hover {
-  font-weight: 900;
-  letter-spacing: 1px;
 }

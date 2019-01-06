@@ -1,5 +1,8 @@
 
 .card{
+  h4 {
+    color: $color-grey-font;
+  }
   .headline--primary {
     color: $color-headline;
     p{
@@ -17,7 +20,7 @@
   font-size: 1.4em;
   color: $color-grey-font;
   font-style: italic;
-  @media (min-width: 1400px) {
+  @media (min-width: $lg) {
     line-height: 1.5em;
     width: 40%;
   }
@@ -33,9 +36,6 @@
   @include left;
 }
 
-h4 {
-  color: $color-grey-font;
-}
 
 .link {
   color: $color-headline;

@@ -2,10 +2,11 @@
 .container{
   margin: 0 auto;
   text-align: center;
-  @media (min-width: 769px) {
+  color: $color-grey-font;
+  @media (min-width: $med) {
     @include flexbox_container_column_LG;
   }
-  @media (min-width: 1400px) {
+  @media (min-width: $lg) {
     @include flexbox_container_column_LG;
     margin-right: 250px;
     margin-left: 250px;

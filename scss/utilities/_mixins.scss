@@ -51,10 +51,17 @@
   text-align: left;
 }
 
+
 //media queries
 
+@mixin lg_width {
+  @media(min-width:$lg) {
+    width: 100%;
+  }
+}
+
 @mixin grid_layout ($g,$r) {
-  @media (min-width:769px) {
+  @media (min-width:$med) {
     flex-grow: $g;
     margin-right: $r;
     text-align: center;

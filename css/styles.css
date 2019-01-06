@@ -5,7 +5,6 @@
 body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
-  color: #8c8c8c;
 }
 
 ul {
@@ -360,6 +359,10 @@ template {
   flex-direction: column;
   justify-content: space-around;
 }
+.grid__col--12 button:hover {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
 @media (min-width: 769px) {
   .grid__col--12 {
     display: flex;
@@ -419,11 +422,6 @@ template {
   text-transform: uppercase;
 }
 
-button:hover {
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
 .form__input {
   background-color: #33ffad;
   height: 5px;
@@ -440,6 +438,7 @@ button:hover {
 .container {
   margin: 0 auto;
   text-align: center;
+  color: #8c8c8c;
 }
 @media (min-width: 769px) {
   .container {
@@ -696,6 +695,9 @@ button:hover {
   }
 }
 
+.card h4 {
+  color: #8c8c8c;
+}
 .card .headline--primary {
   color: #33ffad;
 }
@@ -728,10 +730,6 @@ button:hover {
 
 .headline--primary {
   text-align: left;
-}
-
-h4 {
-  color: #8c8c8c;
 }
 
 .link {
